@@ -18,5 +18,5 @@ xlabel("Number of iterations");
 legend('I^{(m)}_n');
 
 set(h2,'PaperSize',[5 5]);
-%print(h2,'pi_plot', '-dpng', '-r300', '-bestfit');
-print(h2,'backward_plot', '-dpng', '-r300');
+print(h2,'backward_plot', '-dpdf', '-r300', '-bestfit');
+%print(h2,'backward_plot', '-dpng', '-r300');

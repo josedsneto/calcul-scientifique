@@ -1,5 +1,5 @@
 
-x = 20;
+x = -20;
 
 N = ceil(2*abs(x));
 
@@ -25,20 +25,18 @@ xlabel("Number of Iterations");
 legend('|exp(20) - exp(20)_{power series}|', 'Bounding Error |x|^n/n!');
 
 set(h,'PaperSize',[5 5]);
-%print(h2,'pi_plot', '-dpng', '-r300', '-bestfit');
-print(h,'exp_err_plot20', '-dpng', '-r300');
+print(h,'exp_err_plot_moins_20', '-dpdf', '-r300', '-bestfit');
 
 h2 = figure();
 plot(1:N + 1, Y, "-sg"); hold on
 plot(1:N + 1, ones(N+1)*exp(x), "--b");
 grid();
-#title('Value of exp(10) through power series');
+title('Value of exp(10) through power series');
 xlabel("Number of Iterations");
 legend('exp(20)_{power series}', 'exp(20)');
 %tight();
 
 set(h2,'PaperSize',[5 5]);
-%print(h2,'pi_plot', '-dpng', '-r300', '-bestfit');
-print(h2,'exp_plot20', '-dpng', '-r300');
+print(h2,'exp_plot_moins20', '-dpdf', '-r300', '-bestfit');
 
 
